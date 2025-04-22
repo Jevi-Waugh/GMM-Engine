@@ -22,20 +22,20 @@ $$
 
 ---
 
-### Covariance Matrix
-
-$$
-\Sigma_m = \frac{1}{n_m} \sum_{i: y_i = m} (x_i - \mu_m)(x_i - \mu_m)^T
-$$
-sum((x_i - mu_m).reshape(-1,1) @ (x_i - mu_m).reshape(-1,1).T for x_i in unique_class) / n_m
----
-
 ### Prior Probability
 
 $$
 \pi_m = \frac{n_m}{n}
 $$
 
+---
+
+### Covariance Matrix
+
+$$
+\Sigma_m = \frac{1}{n_m} \sum_{i: y_i = m} (x_i - \mu_m)(x_i - \mu_m)^T
+$$
+<pre> sum((x_i - mu_m).reshape(-1,1) @ (x_i - mu_m).reshape(-1,1).T for x_i in unique_class) / n_m</pre>
 ---
 
 ### Prediction Rule
