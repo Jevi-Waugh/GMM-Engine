@@ -5,6 +5,10 @@
 This project will explore Gaussian Mixture Models (GMM) and their application in supervised and unsupervised learning. 
 It includes a theoretical explanation, an implementation from scratch, and a comparison with scikit-learn’s GMM.
 
+### Project Update - 22 April 2024
+I have starting working on supervised learning after working through the mathematical derivations and likelihood. The supervised classifier has been coded
+and I just need to create some synthetic data and plot it with its contours.
+
 ### Supervised Learning
 ### Goal
 
