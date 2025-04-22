@@ -41,7 +41,7 @@ $$
 ### Prediction Rule
 
 $$
-\hat{y}_i = \arg\max_m \; \pi_m \cdot \mathcal{N}(x_i \mid \mu_m, \Sigma_m)
+\hat{y}_i = \arg\max_m \ \pi_m \cdot \mathcal{N}(x_i \mid \mu_m, \Sigma_m)
 $$
 
-<pre> ```python # The GMM prediction likelihoods = np.zeros((len(X), self.n_components)) for k in range(self.n_components): likelihoods[:, k] = self.priors[k] * multivariate_normal.pdf( X, mean=self.means[k], cov=self.covariances[k] ) y_pred = np.argmax(likelihoods, axis=1) ``` </pre>
+<pre>self.priors[k] * multivariate_normal.pdf( X, mean=self.means[k], cov=self.covariances[k] ) y_pred = np.argmax(likelihoods, axis=1)</pre>
