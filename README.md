@@ -27,7 +27,7 @@ The GMM assumes that $p(x|y)$ has a Gaussian distribution for each y. $X$ modele
 
 According to Joint Probability:
 $$
-p(x,y) = p(x|y)p(y) = N(x|\mu_m, \Sigma_m) \ \cdot \pi_m
+\text{p(x,y) = p(x|y)p(y) = }N(x|\mu_m, \Sigma_m) \ \cdot \pi_m
 $$
 
 ### Supervised Learning of the Gaussian Mixture Model
