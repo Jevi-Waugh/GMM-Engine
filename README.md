@@ -46,7 +46,7 @@ $$
 The unknown parameters to be learned are $\theta = \{\mu_m, \Sigma_m, \pi_m\}^M_{m=1}$. This means that we compute the log-likelihood of the data under all $M$ Gaussian components and sum them to obtain the total log-likelihood.
 
 $$
-p(\underbrace{\{x_i, y_i\}_{i=1}^n}_\tau | \theta) \\ = \prod_{i=1}^n \underbrace{p(x_i,y_i|\theta)}_{joint \ likelihood} \\ \text{remember that} \ p(x_i,y_i|\theta) \equiv p(x,y) \\ =\prod_{i=1}^n p(x_i|y_i,\theta).p(y_i|\theta)
+\text{p}(\underbrace{\{x_i, y_i\}_{i=1}^n}_\tau | \theta) \\ = \prod_{i=1}^n \underbrace{p(x_i,y_i|\theta)}_{joint \ likelihood} \\ \text{remember that} \ p(x_i,y_i|\theta) \equiv p(x,y) \\ =\prod_{i=1}^n p(x_i|y_i,\theta).p(y_i|\theta)
 $$
 
 Estimate parameters $\theta = \{ \mu_m, \Sigma_m, \pi_m \}$ for each class $m$ using labeled data.
