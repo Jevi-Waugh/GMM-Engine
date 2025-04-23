@@ -14,7 +14,7 @@ A Gaussian Mixture Model (GMM) is called a mixture model because the overall dis
 
 The Gaussian mixture model makes use of the factorisation of the 
 $$
-p(x,y) = p(x|y)p(y)
+\text{p(x,y) = p(x|y)p(y)}
 $$
 
 The second factor is the marginal distribution of y. Since y is categorical and takes values in the set $\{1,…,M\}$, this is given by a categorical distribution with $M$ parameters $\{\pi_m\}^{M}_{m=1}$
@@ -27,11 +27,13 @@ The GMM assumes that $p(x|y)$ has a Gaussian distribution for each y. $X$ modele
 
 According to Joint Probability:
 $$
-\text{p(x,y) = p(x|y)p(y) = }N(x|\mu_m, \Sigma_m) \ \cdot \pi_m
+\text{p(x,y) = p(x|y)p(y) = N}(x|\mu_m, \Sigma_m) \ \cdot \pi_m
 $$
 
 ### Supervised Learning of the Gaussian Mixture Model
-This is our training data
+
+This is our training data:
+
 $$
 \tau = \{X_i,Y_i\}_{i=1}^{n}
 $$
